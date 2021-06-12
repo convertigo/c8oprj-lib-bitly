@@ -1,6 +1,6 @@
 ↑convertigo: 7.9.0.m006
 ↓lib_Bitly [core.Project]: 
-  comment: Mashup Sequencer project
+  comment: This is the Bitly library for Convertigo platform. Use this library to shorten urls
   version: 1.0
   ↓Bitly [connectors.HttpConnector]: 🗏 connectors/Bitly.yaml
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
