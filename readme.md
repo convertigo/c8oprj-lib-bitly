@@ -21,7 +21,7 @@ This library is based on Bitly API, to access this API:
 * Go to https://bitly.is/accesstoken 
 * Login to your Bitly account. If you do not have a bitly account create one. A free one works ok for 1000 links / month
 * On the right hand side you will see GENERIC ACESS TOKEN panel. Follow instructions and click GENERATE TOKEN button
-* Copy your API key
+* Copy your TOKEN
 
 ## Configuring Convertigo Symbols
 
