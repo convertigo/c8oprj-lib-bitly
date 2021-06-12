@@ -1,0 +1,6 @@
+↑convertigo: 7.9.0.m006
+↓lib_Bitly [core.Project]: 
+  comment: Mashup Sequencer project
+  ↓Bitly [connectors.HttpConnector]: 🗏 connectors/Bitly.yaml
+  ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
+  ↓Shorten [sequences.GenericSequence]: 🗏 sequences/Shorten.yaml

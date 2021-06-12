@@ -1,0 +1,25 @@
+baseDir: /v4/
+https: true
+port: 443
+server: api-ssl.bitly.com
+↓Shorten [transactions.JsonHttpTransaction]: 
+  ↑default: true
+  httpParameters: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+          - com.twinsoft.convertigo.beans.common.XMLVector: 
+            - java.lang.String: 
+              - ↑value: Content-Type
+            - java.lang.String: 
+              - ↑value: application/json
+  httpVerb: POST
+  subDir: shorten
+  ↓__body [variables.RequestableHttpVariable-1623520320562]: 
+    httpMethod: POST
+    httpName: __body
+  ↓__header_Authorization [variables.RequestableHttpVariable-1623520669041]: 
+    httpMethod: POST
+    httpName: __header_Authorization

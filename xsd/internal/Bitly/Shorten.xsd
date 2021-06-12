@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:lib_Bitly_ns="http://www.convertigo.com/convertigo/projects/lib_Bitly" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/lib_Bitly">
+    <xsd:element name="Bitly__Shorten" type="lib_Bitly_ns:Bitly__ShortenRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="Bitly__ShortenResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="lib_Bitly_ns:Bitly__ShortenResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="Bitly__ShortenResponseType">
+        <xsd:sequence>
+            <xsd:element name="document" type="lib_Bitly_ns:Bitly__ShortenResponseData"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Bitly__ShortenRequestData">
+        <xsd:sequence>
+            <xsd:element name="__body" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="__header_Authorization" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>new variable</xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Bitly_Shorten_document_object_archivedType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="Bitly_Shorten_document_object_created_atType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="Bitly_Shorten_document_object_custom_bitlinksType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="Bitly_Shorten_document_object_deeplinksType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="Bitly_Shorten_document_object_idType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="Bitly_Shorten_document_object_linkType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="Bitly_Shorten_document_object_long_urlType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="Bitly_Shorten_document_object_references_groupType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="Bitly_Shorten_document_object_referencesType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="group" type="lib_Bitly_ns:Bitly_Shorten_document_object_references_groupType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="Bitly_Shorten_document_object_tagsType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="Bitly_Shorten_document_objectType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="archived" type="lib_Bitly_ns:Bitly_Shorten_document_object_archivedType"/>
+            <xsd:element minOccurs="0" name="created_at" type="lib_Bitly_ns:Bitly_Shorten_document_object_created_atType"/>
+            <xsd:element minOccurs="0" name="custom_bitlinks" type="lib_Bitly_ns:Bitly_Shorten_document_object_custom_bitlinksType"/>
+            <xsd:element minOccurs="0" name="deeplinks" type="lib_Bitly_ns:Bitly_Shorten_document_object_deeplinksType"/>
+            <xsd:element minOccurs="0" name="id" type="lib_Bitly_ns:Bitly_Shorten_document_object_idType"/>
+            <xsd:element minOccurs="0" name="link" type="lib_Bitly_ns:Bitly_Shorten_document_object_linkType"/>
+            <xsd:element minOccurs="0" name="long_url" type="lib_Bitly_ns:Bitly_Shorten_document_object_long_urlType"/>
+            <xsd:element minOccurs="0" name="references" type="lib_Bitly_ns:Bitly_Shorten_document_object_referencesType"/>
+            <xsd:element minOccurs="0" name="tags" type="lib_Bitly_ns:Bitly_Shorten_document_object_tagsType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="Bitly__ShortenResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="object" type="lib_Bitly_ns:Bitly_Shorten_document_objectType"/>
+            <xsd:element minOccurs="0" name="error" type="lib_Bitly_ns:ConvertigoError"/>
+        </xsd:sequence>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="context" type="xsd:string"/>
+        <xsd:attribute name="contextId" type="xsd:string"/>
+        <xsd:attribute name="fromStub" type="xsd:boolean"/>
+        <xsd:attribute name="fromcache" type="xsd:boolean"/>
+        <xsd:attribute name="generated" type="xsd:string"/>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="signature" type="xsd:long"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="version" type="xsd:string"/>
+        <xsd:attribute name="screenclass" type="xsd:string"/>
+        <xsd:attribute name="userReference" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContextVariable">
+        <xsd:attribute name="name" type="xsd:string"/>
+        <xsd:attribute name="value" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContext">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="lib_Bitly_ns:ConvertigoErrorContextVariable"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoError">
+        <xsd:sequence minOccurs="0">
+            <xsd:element name="code" type="xsd:integer"/>
+            <xsd:element name="message" type="xsd:string"/>
+            <xsd:element name="details" type="xsd:string"/>
+            <xsd:element name="context" type="lib_Bitly_ns:ConvertigoErrorContext"/>
+            <xsd:element name="exception" type="xsd:string"/>
+            <xsd:element name="stacktrace" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="type">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="c8o"/>
+                    <xsd:enumeration value="project"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType>
+</xsd:schema>
