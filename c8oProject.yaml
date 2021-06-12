@@ -3,5 +3,4 @@
   comment: This is the Bitly library for Convertigo platform. Use this library to shorten urls
   version: 1.0
   ↓Bitly [connectors.HttpConnector]: 🗏 connectors/Bitly.yaml
-  ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
   ↓Shorten [sequences.GenericSequence]: 🗏 sequences/Shorten.yaml
