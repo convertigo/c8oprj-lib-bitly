@@ -85,3 +85,6 @@ comment: Shorten an url using the bitly API. Will return a link with the short u
 ↓TestOK [core.TestCase]: 
   ↓url [variables.TestCaseVariable-1623520534276]: 
     value: https://www.convertigo.com
+↓TestOK1 [core.TestCase]: 
+  ↓url [variables.TestCaseVariable-1623526930643]: 
+    value: https://pedro.convertigo.net/convertigo/projects/C8Oforms/DisplayObjects/pwas/2605967dd69f777587556efcfe268c7689021f9bb9791a471f96340bcfd8604f/index.html#/s/2605967dd69f777587556efcfe268c7689021f9bb9791a471f96340bcfd8604f
